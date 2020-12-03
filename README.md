@@ -50,15 +50,15 @@
 
 
   ```
-{"Cookie":"ywguid=123456789;ywkey=wedqwdlAWVJp9;platform=android;channel=mqqmina;mpVersion=0.30.0;qq_ver=8.4.18.4945;os_ver=Android10......}
+{"Cookie":"ywguid=123456789;ywkey=wedqwdlAWVJp9;platform=android;channel=mqqmina;mpVersion=0.30.0;qq_ver=8.4.18.4945;os_ver=Android10","aaa":"bbb",......}
   ```
 
 多账号请按`Enter`键换行隔开示例(这里给下三个账号的示例)
 
   ```
-{"Cookie":"ywguid=123456789;ywkey=******}
-{"Cookie":"ywguid=123456789;ywkey=******}
-{"Cookie":"ywguid=123456789;ywkey=******}
+{"Cookie":"ywguid=123456789;ywkey=******","aaa":"bbb",......}
+{"Cookie":"ywguid=123456789;ywkey=******","aaa":"bbb",......}
+{"Cookie":"ywguid=123456789;ywkey=******","aaa":"bbb",......}
   ```
   
 4. `QQREADTIMEURL` 参数格式为
@@ -75,7 +75,7 @@ https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=***&refer=-1&bid=***&r
 https://mqqapi.reader.qq.com/mqq/addReadTimeWithBid?scene=***&refer=-1&bid=***&readTime=***&read_type=0&conttype=1&read_status=0&chapter_info=%5B%7B%221%22%3A%7B%22readTime%22%3A***%2C%22pay_status%22%3A0%7D%7D%5D&sp=-1
   ```
   
-5. **特别注意：** 三个参数出现的顺序一定要一致
+5. **特别注意：** 三个参数中每个账号信息出现的顺序一定要一致，且每个参数有几个账号就写几行，不要有多余空行！
 
 ### 运行方式
 
@@ -119,7 +119,12 @@ GitHub action自动运行，账号信息读取自 `Repo-Setting-Secrets`
   [0，1，2，3]  0：关闭通知   1：所有通知   2：领取宝箱成功通知   3：每领15个宝箱通知一次
 ```
 
+### 同步Fork后的代码
+
+手动同步，[具体教程](http://www.ibloger.net/article/3361.html)
+
 ### 特别感谢(排名不分先后)：
+
 * [@ziye12](https://github.com/ziye12)
 
 * [@Zero-S1](https://github.com/Zero-S1)
